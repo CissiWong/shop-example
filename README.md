@@ -46,9 +46,9 @@ The code folder in this repository contains a copy of the Technigo React Starter
 
 Your company has an example store created in Tictail. You can access the administration interface for the store here: https://tictail.com/dashboard. Your login credentials are below. Also make a note of the store ID - you'll need to use this when using the API.
 
-Username: tictail-group1@technigo.io
+Username: tictail-group2@technigo.io
 Password: buildshop
-Store ID: 5znA
+Store ID: 5zns
 
 There you’ll be able to [view products](https://tictail.com/dashboard/products), create/update products and change navigation (categories), as well as [update general store information](https://tictail.com/dashboard/settings/general). The shops contain example products in three categories (art, watches and chairs) but feel free to change if you’d rather have other products or categories. In fact, feel free to change anything about these shops - they’re created only for this purpose, and they’re easy to recreate if anything breaks.
 
