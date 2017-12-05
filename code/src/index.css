@@ -1,5 +1,31 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: #000;
+}
+
+h2 {
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: medium;
+}
+
+h3, p {
+  font-size: 13px;
+  letter-spacing: 1.5px;
+}
+
+button {
+  width: 10%;
+  border: 1px solid #cccccc;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  padding: 5px 10px 5px 10px;
 }
