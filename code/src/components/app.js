@@ -5,7 +5,9 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        Find me in src/app.js!
+        <h1>Watches & Art</h1>
+        <h2>100 sek</h2>
+        <p>Product description bla bla bla</p>
       </div>
     )
   }
