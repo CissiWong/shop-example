@@ -11,6 +11,7 @@ class App extends React.Component {
         <Categories />
         <Header />
         <Products />
+        <Footer />
       </div>
     )
   }
