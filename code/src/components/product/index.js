@@ -1,5 +1,5 @@
 import React from "react"
-import "./product.css"
+import "./index.css"
 
 class Product extends React.Component {
   render() {
