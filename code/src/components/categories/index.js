@@ -1,6 +1,6 @@
 import React from "react"
 
-class Category extends React.Component {
+class Categories extends React.Component {
   render() {
     return (
       <div className="category-container">
