@@ -1,7 +1,7 @@
 import React from "react"
 import Product from "../product"
 import "./index.css"
-
+import Categories from "../categories"
 class Products extends React.Component {
   constructor(props) {
     super(props)

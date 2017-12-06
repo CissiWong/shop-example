@@ -1,4 +1,5 @@
 import React from "react"
+import "./index.css"
 
 class Header extends React.Component {
   render() {
@@ -6,20 +7,12 @@ class Header extends React.Component {
       <div className="header-container">
         <div className="logo-container">
           <h1>Watches & Art</h1>
-        </div>
-        <div className="symbols-container">
-          <ul>
-            <li>Cart</li>
-            <li>Search</li>
-          </ul>
-        </div>
-        <div className="categories-container">
-          <ul>
-            <li>All</li>
-            <li>Watches</li>
-            <li>Art</li>
-            <li>Chairs</li>
-          </ul>
+          <div className="symbols-container">
+            <ul>
+              <li>Cart</li>
+              <li>Search</li>
+            </ul>
+          </div>
         </div>
       </div>
     )
