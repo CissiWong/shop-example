@@ -1,7 +1,8 @@
 import React from "react"
 import Product from "../product"
 import "./index.css"
-import Categories from "../categories"
+import Header from  "../header"
+
 class Products extends React.Component {
   constructor(props) {
     super(props)
@@ -29,7 +30,7 @@ class Products extends React.Component {
             image={item.images[0].url}
             description={item.description}
             currency={item.currency}
-            categories={item.categories}/>
+            categories={item.categories[0].slug}/>
         })}
 
       </div>
