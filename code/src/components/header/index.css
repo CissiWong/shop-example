@@ -11,14 +11,10 @@ li {
   padding: 0;
 }
 
-h1 {
-  text-align: center;
-}
-
 .header-container {
-  height: 100px;
+  height: 120px;
   border-bottom: 0.5px solid;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .logo-container {
@@ -26,6 +22,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .symbols-container {
