@@ -57,3 +57,6 @@ typings/
 # dotenv environment variables file
 .env
 
+code/src/components/product/index.js
+code/src/components/products/index.js
+*.js
