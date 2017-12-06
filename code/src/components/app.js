@@ -8,7 +8,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+<<<<<<< HEAD
         <Category />
+=======
+        <Header />
+>>>>>>> e5d89ef80e83c30c2df52c7bb939c4e0ae938ff9
         <Products />
       </div>
     )
