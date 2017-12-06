@@ -5,15 +5,14 @@ import "./index.css"
 class Product extends React.Component {
   render() {
     return (
-      <section>
-        <div className="product-container">
-          <img src={this.props.image} alt="" />
-          <div className="product-info">
-            <div>{this.props.title}</div>
-            <div>{this.props.price} {this.props.currency}</div>
-          </div>
+      <div className="product-container">
+        <img className="product-image" src={this.props.image} alt="" />
+        <div className="product-info">
+          <div className="product-title">{this.props.title}</div>
+          <div className="product-price">{this.props.price} {this.props.currency}</div>
+          <button className="product-btn">Buy</button>
         </div>
-      </section>
+      </div>
     )
   }
 }

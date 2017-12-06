@@ -2,4 +2,8 @@
 
 .Products {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-height: auto;
+  width: 40%;
 }
