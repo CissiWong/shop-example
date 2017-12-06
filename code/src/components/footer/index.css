@@ -4,8 +4,9 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content:flex-start;
-  line-height: 1.5;
+  /*line-height: 1.5;*/
   /*background-color: #efefef;*/
+  align-items: center;
 }
 
 .termsOfService:hover ,
@@ -20,7 +21,7 @@ a.privacyPolicy,
 a.helpCenter
 {
   position: relative;
-  margin: auto 5px;
+  margin: 10px 5px;
   color: #171b1f;
   font-size: 13px;
   letter-spacing: 1.5px;
@@ -31,5 +32,7 @@ a.helpCenter
 }
 
 .footer button {
+  padding: 5px;
+  height: 30px;
   width: auto;
 }
