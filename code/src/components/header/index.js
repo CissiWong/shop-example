@@ -19,7 +19,6 @@ class Header extends React.Component {
 
   render() {
     return (
-
       <div className="header-container">
         <div className="symbols-container">
           <div>Cart</div>
@@ -31,13 +30,11 @@ class Header extends React.Component {
         <div className="Categories">
           {this.state.categories.map((item) => {
             return <div>{item.title}</div>
-
           })}
         </div>
       </div>
     )
   }
 }
-
 
 export default Header
