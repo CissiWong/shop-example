@@ -1,5 +1,6 @@
 import React from "react"
 import Product from "../product"
+import "./index.css"
 
 class Products extends React.Component {
   constructor(props) {

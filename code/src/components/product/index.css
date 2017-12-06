@@ -1,6 +1,10 @@
 /* CSS for Product component */
 
+section {
+  display: flex;
+}
+
 img {
-  height: 300px;
-  width: 200px;
+  max-height: 150px;
+  width: 45%;
 }
