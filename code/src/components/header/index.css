@@ -1,32 +1,22 @@
-ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+hr {
+  border: 0.5px solid;
+  width: 100%;
+  margin-top: 40px;
 }
 
 .header-container {
-  height: 120px;
-  border-bottom: 0.5px solid;
-  margin-bottom: 30px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 20px 0 20px;
 }
 
 .logo-container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
 }
 
 .symbols-container {
-  width: 100%;
   font-size: 10px;
   display: flex;
   justify-content: flex-end;
@@ -34,4 +24,14 @@ li {
 
 .symbols-container div{
   margin: 10px 5px 10px 5px;
+}
+
+.Categories {
+  display: flex;
+}
+
+.categories-container {
+  margin: 10px 10px 10px 5px;
+  font-size: 13px;
+  letter-spacing: 2px;
 }

@@ -27,9 +27,11 @@ class Header extends React.Component {
         <div className="logo-container">
           <h1>Watches & Art</h1>
         </div>
+        <hr />
         <div className="Categories">
           {this.state.categories.map((item) => {
-            return <div>{item.title}</div>
+            return <div className="categories-container">
+              {item.title}</div>
           })}
         </div>
       </div>
