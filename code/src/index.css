@@ -35,7 +35,18 @@ button {
 }
 
 @media only screen and (min-width: 600px) {
+  /* Mobile styling*/
   h1 {
     font-size: 35px;
   }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  /* Tablet styling */
+
+}
+
+
+@media only screen and (min-width: 901px) {
+  /* Desktop styling*/
 }
