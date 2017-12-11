@@ -21,8 +21,8 @@ class Header extends React.Component {
     return (
       <div className="header-container">
         <div className="symbols-container">
-          <div>Cart</div>
-          <div>Search<img src=".../images/magnifying-glass.png" alt="" /></div>
+          <img className="symbol" src="/shopping-bag.png" alt="" />
+          <img className="symbol" src="/magnifying-glass.png" alt="" />
         </div>
         <div className="logo-container">
           <h1>Watches & Art</h1>

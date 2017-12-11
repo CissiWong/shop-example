@@ -17,13 +17,15 @@ hr {
 }
 
 .symbols-container {
-  font-size: 10px;
   display: flex;
   justify-content: flex-end;
+  padding: 15px 0 10px 0;
 }
 
-.symbols-container div{
-  margin: 10px 5px 10px 5px;
+.symbol {
+  width: 18px;
+  height: 18px;
+  margin-left: 10px;
 }
 
 .Categories {
@@ -34,4 +36,14 @@ hr {
   margin: 10px 10px 10px 5px;
   font-size: 13px;
   letter-spacing: 2px;
+}
+
+@media only screen and (min-width: 600px) {
+  .header-container {
+    margin: 0 60px 0 60px;
+  }
+  .symbol {
+    width: 25px;
+    height: 25px;
+  }
 }

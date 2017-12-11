@@ -33,3 +33,9 @@ button {
   letter-spacing: 1.5px;
   padding: 5px 10px 5px 10px;
 }
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 35px;
+  }
+}
