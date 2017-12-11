@@ -1,7 +1,8 @@
 import React from "react"
+import ProductThumb from "components/ProductThumb"
 import "./index.css"
 
-class Products extends React.Component {
+class ProductCollection extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -21,7 +22,7 @@ class Products extends React.Component {
     return (
       <div className="Products">
         {this.state.Products.map((item) => {
-          return <Product
+          return <ProductThumb
             key={item.id}
             title={item.title}
             price={item.price}
@@ -36,4 +37,4 @@ class Products extends React.Component {
   }
 }
 
-export default Products
+export default ProductCollection
