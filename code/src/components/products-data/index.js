@@ -1,7 +1,5 @@
 import React from "react"
-import Product from "../product"
 import "./index.css"
-import Header from  "../header"
 
 class Products extends React.Component {
   constructor(props) {
