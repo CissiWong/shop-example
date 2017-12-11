@@ -45,3 +45,7 @@
   text-align: center;
   background-color: white;
 }
+
+@@media (min-width: 900px) {
+  
+}
