@@ -25,6 +25,8 @@
 .ProductThumb .product-title {
   text-align: center;
   letter-spacing: 1.5px;
+  overflow: hidden;
+  max-height: 16px;
 }
 
 .ProductThumb .product-price {
