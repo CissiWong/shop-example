@@ -1,15 +1,14 @@
 hr {
   border: 0.5px solid;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .header-container {
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  height: 150px;
   margin: 0 20px 0 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo-container {
@@ -45,5 +44,11 @@ hr {
   .symbol {
     width: 25px;
     height: 25px;
+  }
+  .header-container {
+    height: 200px;
+  }
+  hr {
+    margin-top: 40px;
   }
 }
