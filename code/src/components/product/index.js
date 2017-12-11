@@ -1,7 +1,6 @@
 import React from "react"
 import "./index.css"
 
-
 class Product extends React.Component {
   render() {
     return (
