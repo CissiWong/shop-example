@@ -1,14 +1,14 @@
 import React from "react"
+import Home from "pages/home"
 import Footer from "./footer"
 import Header from "./header"
-import Products from "./products"
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
         <Header />
-        <Products />
+        <Home />
         <Footer />
       </div>
     )

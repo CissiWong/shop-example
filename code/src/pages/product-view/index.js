@@ -12,3 +12,5 @@ class productView extends React.Component {
     )
   }
 }
+
+export default productView
