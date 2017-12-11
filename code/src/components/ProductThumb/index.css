@@ -1,29 +1,30 @@
-/* CSS for Product component */
+/* CSS for ProductThumb component */
 
-.product-container {
+.ProductThumb {
   font-family: 'Roboto', sans-serif;
+  margin: 5px;
 }
 
-.product-image {
-  max-width: 100px;
+.ProductThumb .product-image {
+  max-width: 150px;
   height: auto;
 }
 
-.product-info {
+.ProductThumb .product-info {
   font-size: 13px;
 }
 
-.product-title {
+.ProductThumb .product-title {
   text-align: center;
   letter-spacing: 1.5px;
 }
 
-.product-price {
+.ProductThumb .product-price {
   text-align: center;
   letter-spacing: 1.5px;
 }
 
-.product-btn {
+.ProductThumb .product-btn {
   width: 50px;
   border: 1px solid #cccccc;
   font-family: 'Roboto', sans-serif;
@@ -31,4 +32,5 @@
   letter-spacing: 1.5px;
   padding: 5px 10px 5px 10px;
   margin: 10px auto 10px auto;
+  text-align: center;
 }
