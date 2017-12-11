@@ -12,6 +12,9 @@
 
 .ProductThumb .product-info {
   font-size: 13px;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .ProductThumb .product-title {
