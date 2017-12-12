@@ -25,6 +25,8 @@
 .ProductThumb .product-title {
   letter-spacing: 1.5px;
   font-size: 15px;
+  max-height: 15px;
+  overflow: hidden;
   text-transform: uppercase;
   text-align: center;
 }
