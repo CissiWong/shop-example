@@ -9,24 +9,20 @@
 .ProductThumb .product-image {
   max-width: 150px;
   max-height: 150px;
-  height: 150px;
+  height: 150px
   /*height: auto;*/
 }
 
 .ProductThumb .product-info {
-  font-size: 13px;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  max-width: 150px;
   align-items: center;
 }
 
 .ProductThumb .product-title {
-  text-align: center;
   letter-spacing: 1.5px;
-  overflow: hidden;
-  max-height: 16px;
+  font-size: 15px;
+  text-transform: uppercase;
 }
 
 .ProductThumb .product-price {
@@ -35,7 +31,7 @@
 }
 
 .ProductThumb .product-btn {
-  width: 50px;
+  width: 120px;
   border: 1px solid #cccccc;
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
@@ -54,7 +50,6 @@
     max-width: 250px;
   }
   .ProductThumb .product-image {
-    max-width: 200px;
-
+    max-width: 300px;
   }
 }
