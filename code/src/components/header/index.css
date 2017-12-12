@@ -1,11 +1,11 @@
 hr {
   border: 0.5px solid;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .header-container {
-  height: 150px;
+  height: auto;
   margin: 0 20px 0 20px;
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@ hr {
   margin-left: 10px;
 }
 
-.Categories {
+/*.Categories {
   display: flex;
 }
 
@@ -35,6 +35,48 @@ hr {
   margin: 10px 10px 10px 5px;
   font-size: 13px;
   letter-spacing: 2px;
+}*/
+
+li {
+  list-style-type: none;
+}
+
+.hamburger {
+  width: 24px;
+  height: 36px;
+  margin: 0;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-left: 8px;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 32px;
+  height: 4px;
+  background-color: black;
+  border-radius: 1px;
+  margin: 0 0 3px 5px;
+  /*transition: 0.4s;*/
+}
+
+.menu {
+  background: white;
+  border: 0.5px solid black;
+  width: 600px;
+  position: absolute;
+  left: -600px;
+  transition: bottom 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+.hamburger-checkbox {
+  display: none;
+}
+
+.hamburger-checkbox:checked + .menu {
+  left: 0;
 }
 
 @media only screen and (min-width: 600px) {
