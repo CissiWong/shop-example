@@ -46,6 +46,15 @@
   background-color: white;
 }
 
-@@media (min-width: 900px) {
-  
+@media (min-width: 900px) {
+  .ProductThumb {
+    max-width: 250px;
+  }
+  .ProductThumb .product-info {
+    max-width: 250px;
+  }
+  .ProductThumb .product-image {
+    max-width: 200px;
+
+  }
 }
