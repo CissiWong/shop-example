@@ -11,9 +11,9 @@ class ProductCollection extends React.Component {
   }
 
   componentDidMount() {
-    fetch("https://api.tictail.com/v1.26/stores/5zns/products").then((response) => {
+    fetch("https://api.tictail.com/v1.26/stores/5zns/products").then(response => {
       return response.json()
-    }).then((json) => {
+    }).then(json => {
       this.setState({ Products: json })
     })
   }
@@ -21,7 +21,7 @@ class ProductCollection extends React.Component {
   render() {
     return (
       <div className="ProductCollection">
-        {this.state.Products.map((item) => {
+        {this.state.Products.map(item => {
           return <ProductThumb
             key={item.id}
             id={item.id}
@@ -30,7 +30,7 @@ class ProductCollection extends React.Component {
             image={item.images[0].url}
             description={item.description}
             currency={item.currency}
-            categories={item.categories[0].slug}/>
+            categories={item.categories[0].slug} />
         })}
 
       </div>
