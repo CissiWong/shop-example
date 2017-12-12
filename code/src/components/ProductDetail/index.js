@@ -19,6 +19,7 @@ class ProductDetail extends React.Component {
   }
 
   render() {
+    // const isOnSale = this.state.Product.sale_active
     if (!this.state.Product.id) {
       return null
     }
@@ -38,6 +39,13 @@ class ProductDetail extends React.Component {
             <div className="product-description">
               {this.state.Product.description}
             </div>
+            {this.state.Product.sale_active &&
+            <div className="onSale">
+              Was: {
+                (this.state.Product.original_price / 100).toLocaleString()
+              } {this.state.Product.currency}
+            </div>
+            }
             <div className="product-amount">
               Price: {
                 (this.state.Product.price / 100).toLocaleString()} {this.state.Product.currency}
