@@ -3,7 +3,6 @@ import "./index.css"
 
 class Header extends React.Component {
 
-
   render() {
     return (
       <div className="header-container">
@@ -12,23 +11,21 @@ class Header extends React.Component {
           <img className="symbol" src="/magnifying-glass.png" alt="" />
         </div>
         <div className="logo-container">
+          <label className="hamburger" htmlFor="hamburger">
+            <div className="bar1" />
+            <div className="bar2" />
+            <div className="bar3" />
+          </label>
+          <input id="hamburger" type="checkbox" className="hamburger-checkbox" />
+
+          <div className="menu">
+            <ul>
+              <li>Watches</li>
+              <li>Chairs</li>
+              <li>Art</li>
+            </ul>
+          </div>
           <h1>Watches & Art</h1>
-        </div>
-
-
-        <label className="hamburger" for="hamburger">
-          <div className="bar1"> </div>
-          <div className="bar2"> </div>
-          <div className="bar3"> </div>
-        </label>
-        <input id="hamburger" type="checkbox" className="hamburger-checkbox" />
-
-        <div className="menu">
-        <ul>
-          <li>Watches</li>
-          <li>Chairs</li>
-          <li>Art</li>
-        </ul>
         </div>
 
         <hr />

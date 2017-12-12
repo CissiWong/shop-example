@@ -12,7 +12,13 @@ hr {
 }
 
 .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-title {
   text-align: center;
+  width: 100%;
 }
 
 .symbols-container {
@@ -27,16 +33,6 @@ hr {
   margin-left: 10px;
 }
 
-/*.Categories {
-  display: flex;
-}
-
-.categories-container {
-  margin: 10px 10px 10px 5px;
-  font-size: 13px;
-  letter-spacing: 2px;
-}*/
-
 li {
   list-style-type: none;
 }
@@ -45,6 +41,7 @@ li {
   width: 24px;
   height: 36px;
   margin: 0;
+  margin-right: 75px;
   cursor: pointer;
   padding-top: 10px;
   padding-left: 8px;
@@ -53,7 +50,7 @@ li {
 }
 
 .bar1, .bar2, .bar3 {
-  width: 32px;
+  width: 25px;
   height: 4px;
   background-color: black;
   border-radius: 1px;
@@ -92,5 +89,11 @@ li {
   }
   hr {
     margin-top: 40px;
+  }
+  .hamburger {
+    display: none;
+  }
+  .logo-container {
+    justify-content: center;
   }
 }
