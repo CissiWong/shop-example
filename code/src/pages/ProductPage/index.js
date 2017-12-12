@@ -6,7 +6,7 @@ class ProductPage extends React.Component {
   render() {
     return (
       <div>
-        <ProductDetail />
+        <ProductDetail id={this.props.match.params.productid} />
       </div>
     )
   }

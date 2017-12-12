@@ -24,6 +24,7 @@ class ProductCollection extends React.Component {
         {this.state.Products.map((item) => {
           return <ProductThumb
             key={item.id}
+            id={item.id}
             title={item.title}
             price={item.price}
             image={item.images[0].url}
