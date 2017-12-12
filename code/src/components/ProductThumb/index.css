@@ -4,6 +4,7 @@
   font-family: 'Roboto', sans-serif;
   margin: 5px;
   max-width: 160px;
+  margin-top: 20px;
 }
 
 .ProductThumb .product-image {
@@ -17,12 +18,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 15px;
+  height: 120px;
 }
 
 .ProductThumb .product-title {
   letter-spacing: 1.5px;
   font-size: 15px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .ProductThumb .product-price {
@@ -48,6 +52,8 @@
   }
   .ProductThumb .product-info {
     max-width: 250px;
+    margin-top: 15px;
+    height: 150px;
   }
   .ProductThumb .product-image {
     max-width: 300px;
