@@ -10,6 +10,7 @@ class ProductDetail extends React.Component {
 
   componentDidMount() {
     fetch(`https://api.tictail.com/v1.25/stores/5zns/products/${this.props.id}`).then(response => {
+      console.log(response)
       return response.json()
     }).then(json => {
       this.setState({ Product: json })
@@ -19,14 +20,13 @@ class ProductDetail extends React.Component {
   render() {
     return (
       <div className="ProductDetail">
-        {this.state.Product.map(item => {
-          return <div className="product-container">
-            {item.title}
-            {item.price} {item.currency}
-            {item.description}
-            {item.image}
-          </div>
-        })}
+        Product ID: {this.state.Product.id}
+        <br />
+        Price: {this.state.Product.price}
+        <br />
+        Title: {this.state.Product.title}
+        <br />
+        Description: {this.state.Product.description}
       </div>
     )
   }
