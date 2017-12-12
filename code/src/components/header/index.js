@@ -26,7 +26,7 @@ class Header extends React.Component {
               <li>Art</li>
             </ul>
           </div>
-          <Link to="/"><h1>Watches & Art</h1></Link>
+          <Link to="/"><h1 className="logo-title">Watches & Art</h1></Link>
         </div>
 
         <hr />
