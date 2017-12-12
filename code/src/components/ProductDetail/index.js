@@ -19,10 +19,14 @@ class ProductDetail extends React.Component {
   }
 
   render() {
+    if (!this.state.Product.id) {
+      return null
+    }
     return (
       <div className="ProductDetail">
-        <div className="product-image" />
-        {/* {this.state.Product.images[2].url} */}
+        <div className="product-detail-container">
+          <img className="product-detail-image" src={this.state.Product.images[0].url} alt="" />
+        </div>
         <div className="product-information">
           <div className="inner-margin">
             <div className="product-id">
