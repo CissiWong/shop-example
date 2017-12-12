@@ -20,7 +20,7 @@ class ProductCollection extends React.Component {
 
   render() {
     return (
-      <div className="Products">
+      <div className="ProductCollection">
         {this.state.Products.map((item) => {
           return <ProductThumb
             key={item.id}

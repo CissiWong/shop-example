@@ -13,13 +13,13 @@ class App extends React.Component {
       <BrowserRouter>
         <div className="App">
           <Header />
-          <Homepage />
-          <Footer />
           <div className="page">
-            <Route path="/home" exact component={Homepage} />
+            <Route path="/" exact component={Homepage} />
             <Route path="/categories" component={Categories} />
             <Route path="/product" component={Product} />
           </div>
+          <Footer />
+
         </div>
       </BrowserRouter>
     )

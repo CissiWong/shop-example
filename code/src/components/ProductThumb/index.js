@@ -5,7 +5,7 @@ import "./index.css"
 class ProductThumb extends React.Component {
   render() {
     return (
-      <div className="product-container">
+      <div className="ProductThumb">
         <img className="product-image" src={this.props.image} alt="" />
         <div className="product-info">
           <div className="product-title">{this.props.title}</div>

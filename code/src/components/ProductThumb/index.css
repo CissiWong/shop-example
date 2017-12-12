@@ -1,29 +1,40 @@
-/* CSS for Product component */
+/* CSS for ProductThumb component */
 
-.product-container {
+.ProductThumb {
   font-family: 'Roboto', sans-serif;
+  margin: 5px;
+  max-width: 160px;
 }
 
-.product-image {
-  max-width: 100px;
-  height: auto;
+.ProductThumb .product-image {
+  max-width: 150px;
+  max-height: 150px;
+  height: 150px;
+  /*height: auto;*/
 }
 
-.product-info {
+.ProductThumb .product-info {
   font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-width: 150px;
+  align-items: center;
 }
 
-.product-title {
+.ProductThumb .product-title {
+  text-align: center;
+  letter-spacing: 1.5px;
+  overflow: hidden;
+  max-height: 16px;
+}
+
+.ProductThumb .product-price {
   text-align: center;
   letter-spacing: 1.5px;
 }
 
-.product-price {
-  text-align: center;
-  letter-spacing: 1.5px;
-}
-
-.product-btn {
+.ProductThumb .product-btn {
   width: 50px;
   border: 1px solid #cccccc;
   font-family: 'Roboto', sans-serif;
@@ -31,4 +42,19 @@
   letter-spacing: 1.5px;
   padding: 5px 10px 5px 10px;
   margin: 10px auto 10px auto;
+  text-align: center;
+  background-color: white;
+}
+
+@media (min-width: 900px) {
+  .ProductThumb {
+    max-width: 250px;
+  }
+  .ProductThumb .product-info {
+    max-width: 250px;
+  }
+  .ProductThumb .product-image {
+    max-width: 200px;
+
+  }
 }
