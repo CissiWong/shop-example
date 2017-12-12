@@ -38,7 +38,7 @@ class ProductDetail extends React.Component {
             <div className="product-description">
               {this.state.Product.description}
             </div>
-            <div className="product-price">
+            <div className="product-amount">
               Price: {this.state.Product.price} {this.state.Product.currency}
               <button className="add-to-cart">Add to Cart</button>
             </div>

@@ -36,7 +36,7 @@
   padding-bottom: 15px;
 }
 
-.product-price {
+.product-amount {
   margin-top: 25px;
   display: flex;
   justify-content: space-between;
@@ -62,7 +62,7 @@
   .product-information {
     width: 50%;
   }
-  .product-price {
+  .product-amount {
     width: 70%;
   }
 }
