@@ -12,10 +12,12 @@ class Header extends React.Component {
           <img className="symbol" src="/magnifying-glass.png" alt="" />
         </div>
         <div className="logo-container">
+          <Link to="/"><h1 className="logo-title">Watches & Art</h1></Link>
+        </div>
           <label className="hamburger" htmlFor="hamburger">
-            <div className="bar1" />
-            <div className="bar2" />
-            <div className="bar3" />
+            <div className="bar" />
+            <div className="bar" />
+            <div className="bar" />
           </label>
           <input id="hamburger" type="checkbox" className="hamburger-checkbox" />
 
@@ -26,8 +28,7 @@ class Header extends React.Component {
               <li>Art</li>
             </ul>
           </div>
-          <Link to="/"><h1 className="logo-title">Watches & Art</h1></Link>
-        </div>
+
 
         <hr />
       </div>

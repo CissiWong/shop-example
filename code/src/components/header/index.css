@@ -45,7 +45,7 @@ li {
   display: inline-block;
 }
 
-.bar1, .bar2, .bar3 {
+.bar {
   width: 25px;
   height: 4px;
   background-color: black;
@@ -58,9 +58,9 @@ li {
   background: white;
   border: 0.5px solid black;
   width: 600px;
-  position: absolute;
+  position: relative;
   left: -600px;
-  transition: bottom 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out;
   box-sizing: border-box;
 }
 
