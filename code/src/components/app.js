@@ -13,7 +13,6 @@ class App extends React.Component {
       <BrowserRouter>
         <div className="App">
           <Header />
-          {/* <Homepage /> */}
           <div className="page">
             <Route path="/" exact component={Homepage} />
             <Route path="/categories" component={Categories} />
