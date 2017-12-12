@@ -30,7 +30,9 @@ class ProductCollection extends React.Component {
             image={item.images[0].url}
             description={item.description}
             currency={item.currency}
-            categories={item.categories[0].slug} />
+            categories={item.categories[0].slug}
+            onSale={item.sale_active}
+            originalPrice={item.original_price} />
         })}
 
       </div>
