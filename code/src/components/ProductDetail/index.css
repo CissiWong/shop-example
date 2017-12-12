@@ -3,19 +3,20 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-top: 30px;
-  height: 500px;
 }
 
 .product-detail-container {
-  width: 50%;
-  border: 1px solid black;
-  height: 300px;
+  width: 90%;
+  height: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .product-detail-image {
-  object-fit: contain;
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .product-information {
@@ -48,15 +49,15 @@
 @media (min-width: 900px) {
   .ProductDetail {
     flex-direction: row;
-    margin-left: 25px;
+    margin-left: 60px;
     margin-right: 25px;
   }
-  .inner-margin {
-    margin: 40px;
+  .product-detail-container {
+    width: 50%;
+    margin: 0;
   }
-  .product-detail-image {
-    width: 40%;
-    height: 500px;
+  .inner-margin {
+    margin: 50px;
   }
   .product-information {
     width: 50%;
