@@ -1,4 +1,5 @@
 import React from "react"
+import "./index.css"
 
 class ProductDetail extends React.Component {
   constructor(props) {
@@ -20,13 +21,25 @@ class ProductDetail extends React.Component {
   render() {
     return (
       <div className="ProductDetail">
-        Product ID: {this.state.Product.id}
-        <br />
-        Price: {this.state.Product.price}
-        <br />
-        Title: {this.state.Product.title}
-        <br />
-        Description: {this.state.Product.description}
+        <div className="product-image" />
+        {/* {this.state.Product.images[2].url} */}
+        <div className="product-information">
+          <div className="inner-margin">
+            <div className="product-id">
+              Product ID: {this.state.Product.id}
+            </div>
+            <div className="product-title">
+              {this.state.Product.title}
+            </div>
+            <div className="product-description">
+              {this.state.Product.description}
+            </div>
+            <div className="product-price">
+              Price: {this.state.Product.price} {this.state.Product.currency}
+              <button className="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
       </div>
     )
   }
