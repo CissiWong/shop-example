@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import "./index.css"
 
 class Header extends React.Component {
@@ -25,7 +26,7 @@ class Header extends React.Component {
               <li>Art</li>
             </ul>
           </div>
-          <h1>Watches & Art</h1>
+          <Link to="/"><h1>Watches & Art</h1></Link>
         </div>
 
         <hr />
