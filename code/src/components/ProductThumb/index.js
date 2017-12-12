@@ -11,7 +11,7 @@ class ProductThumb extends React.Component {
         </Link>
         <div className="product-info">
           <div className="product-title">{this.props.title}</div>
-          <div className="product-price">{this.props.price} {this.props.currency}</div>
+          <div className="product-price">{(this.props.price/100).toLocaleString()} {this.props.currency}</div>
           <button className="product-btn">Buy</button>
         </div>
       </div>
