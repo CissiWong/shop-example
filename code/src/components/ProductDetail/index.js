@@ -39,7 +39,8 @@ class ProductDetail extends React.Component {
               {this.state.Product.description}
             </div>
             <div className="product-amount">
-              Price: {(this.state.Product.price / 100).toLocaleString()} {this.state.Product.currency}
+              Price: {
+                (this.state.Product.price / 100).toLocaleString()} {this.state.Product.currency}
               <button className="add-to-cart">Add to Cart</button>
             </div>
           </div>
