@@ -1,5 +1,4 @@
 .header-container {
-  height: auto;
   margin: 0 10px 0 10px;
   display: flex;
   flex-direction: column;
@@ -15,6 +14,17 @@
   width: 100%;
   text-transform: uppercase;
   font-size: 20px;
+}
+
+.menu-desktop {
+  display: none;
+  width: 20%;
+  flex-direction: row;
+  background: white;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0;
+  margin-top: -3px;
 }
 
 .symbols-container {
@@ -43,6 +53,8 @@ li {
   padding-left: 8px;
   padding-bottom: 10px;
   display: inline-block;
+  position: relative;
+  z-index: 1;
 }
 
 .bar {
@@ -58,18 +70,20 @@ li {
   background: white;
   border: 0.5px solid black;
   width: 600px;
-  position: relative;
-  left: -600px;
-  transition: left 0.3s ease-in-out;
-  box-sizing: border-box;
+  position: absolute;
+  top: -100%;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  background: rgba (255, 255, 200, 0.4);
 }
 
 .hamburger-checkbox {
   display: none;
 }
 
-.hamburger-checkbox:checked + .menu {
-  left: 0;
+.hamburger-checkbox:checked ~ .menu {
+  top: 0;
+  opacity: 1;
 }
 
 @media only screen and (min-width: 600px) {
@@ -83,10 +97,10 @@ li {
   .header-container {
     height: 200px;
   }
-  hr {
-    margin-top: 40px;
-  }
   .hamburger {
+    display: none;
+  }
+  .menu {
     display: none;
   }
   .logo-container {
@@ -94,5 +108,8 @@ li {
   }
   .logo-title {
     font-size: 40px;
+  }
+  .menu-desktop {
+    display: flex;
   }
 }

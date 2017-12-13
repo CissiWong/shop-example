@@ -9,7 +9,7 @@ class Homepage extends React.Component {
         <div className="hero-image-container">
           <img className="hero-image" src="/christopher-burns-435998.jpg" alt="" />
         </div>
-      <div className="hero-products">Our Products</div>
+        <div className="hero-products">Our Products</div>
         <ProductCollection />
       </div>
     )
