@@ -21,8 +21,8 @@ class ProductCollection extends React.Component {
   render() {
     return (
       <div className="PC-container">
-        <div className="count">Number of products:
-          {this.state.Products.length}
+        <div className="count">
+          Number of products: {this.state.Products.length}
         </div>
         <div className="Product-list">
           {this.state.Products.map(item => {

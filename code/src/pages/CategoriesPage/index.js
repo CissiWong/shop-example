@@ -34,7 +34,7 @@ class CategoriesPage extends React.Component {
     return (
       <div className="CC-container">
         <div className="count">
-          <h6>Products:{this.state.categories.length}</h6>
+          Number of products: {this.state.categories.length}
         </div>
         <div className="CategoryCollection">
           {this.state.categories.map(item => {
