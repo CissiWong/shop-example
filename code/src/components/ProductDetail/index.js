@@ -5,17 +5,25 @@ class ProductDetail extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      Product: {}
+      Product: {},
+      displayedImage: {}
     }
   }
 
   componentDidMount() {
     fetch(`https://api.tictail.com/v1.25/stores/5zns/products/${this.props.id}`).then(response => {
-      console.log(response)
       return response.json()
     }).then(json => {
-      this.setState({ Product: json })
+      console.log(json)
+      this.setState({ Product: json, displayedImage: json.images[0] })
     })
+  }
+
+  smallImageClicked(image) {
+    // this.setState(image)
+    console.log(image)
+    this.setState({ displayedImage:image})
+    // this.setState({ Product: image })
   }
 
   render() {
@@ -23,10 +31,11 @@ class ProductDetail extends React.Component {
     if (!this.state.Product.id) {
       return null
     }
+
     return (
       <div className="ProductDetail">
         <div className="product-detail-container">
-          <img className="product-detail-image" src={this.state.Product.images[0].url} alt="" />
+          <img className="product-detail-image" src={this.state.displayedImage.url} alt="" />
         </div>
         <div className="product-information">
           <div className="inner-margin">
@@ -54,7 +63,8 @@ class ProductDetail extends React.Component {
             {this.state.Product.images.length > 1 &&
               <div className="extraImages">
                 {this.state.Product.images.map(image => {
-                  return <img onClick={(image) => (this.setState(image.url))} key={image.id} className="product-detail-image-small" src={image.url} alt="" />
+                  console.log(image)
+                  return <img onClick={() => this.smallImageClicked(image)} key={image.id} className="product-detail-image-small" src={image.url} alt="" />
                 })
                 }
               </div>
