@@ -1,12 +1,7 @@
 .header-container {
-  margin: 0 10px 0 10px;
-  display: flex;
-  flex-direction: column;
-}
-
-.logo-container {
   display: flex;
   align-items: center;
+  height: 80px;
 }
 
 .logo-title {
@@ -14,6 +9,15 @@
   width: 100%;
   text-transform: uppercase;
   font-size: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.menu-list {
+  margin: 0;
+  padding-left: 12px;
+  padding-bottom: 22px;
+  padding-top: 22px;
 }
 
 .menu-desktop {
@@ -27,32 +31,20 @@
   margin-top: -3px;
 }
 
-.symbols-container {
-  display: flex;
-  justify-content: flex-end;
-  padding: 15px 0 10px 0;
-}
-
-.symbol {
-  width: 18px;
-  height: 18px;
-  margin-left: 10px;
-}
-
 li {
   list-style-type: none;
 }
 
 .hamburger {
-  width: 24px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
   margin: 0;
-  margin-right: 75px;
   cursor: pointer;
-  padding-top: 10px;
-  padding-left: 8px;
+  margin-right: 60px;
+  padding-top: 15px;
+  padding-left: 10px;
   padding-bottom: 10px;
-  display: inline-block;
+  display: block;
   position: relative;
   z-index: 1;
 }
@@ -61,20 +53,17 @@ li {
   width: 25px;
   height: 4px;
   background-color: black;
-  border-radius: 1px;
   margin: 0 0 3px 5px;
-  /*transition: 0.4s;*/
 }
 
 .menu {
   background: white;
-  border: 0.5px solid black;
-  width: 600px;
+  width: 100%;
   position: absolute;
-  top: -100%;
+  top: -70px;
   transition: all 0.3s ease-in-out;
   opacity: 0;
-  background: rgba (255, 255, 200, 0.4);
+  background: rgba(255, 255, 255, 0.6);
 }
 
 .hamburger-checkbox {
@@ -82,7 +71,7 @@ li {
 }
 
 .hamburger-checkbox:checked ~ .menu {
-  top: 0;
+  top: 80px;
   opacity: 1;
 }
 
