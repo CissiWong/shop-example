@@ -87,18 +87,14 @@ li {
   transform: rotate(45deg) translate(-5px, -5px) ;
 }
 
-@media only screen and (min-width: 600px) {
+/* destop */
+@media only screen and (min-width: 950px) {
   .header-container {
     margin: 0 90px 0 90px;
     flex-direction: column;
-  }
-  .symbol {
-    width: 25px;
-    height: 25px;
-  }
-  .header-container {
     height: 200px;
   }
+
   .hamburger {
     display: none;
   }
@@ -114,5 +110,31 @@ li {
   }
   .menu-desktop {
     display: flex;
+  }
+}
+
+/* tablet */
+@media (min-width: 600px) and (max-width: 950px) {
+  .header-container {
+    margin: 0 90px 0 90px;
+    flex-direction: column;
+    height: 200px;
+  }
+  .menu-desktop {
+    width: 40%;
+    display: flex;
+  }
+  .hamburger {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .logo-container {
+    justify-content: center;
+  }
+  .logo-title {
+    font-size: 40px;
+    padding-top: 25px;
   }
 }
