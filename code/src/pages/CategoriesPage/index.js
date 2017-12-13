@@ -23,7 +23,7 @@ class CategoriesPage extends React.Component {
 
   render() {
     return (
-      <div className="Categories">
+      <div className="CategoryCollection">
         {this.state.categories.map(item => {
           return <ProductThumb
             key={item.id}
