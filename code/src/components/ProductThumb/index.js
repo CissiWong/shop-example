@@ -19,7 +19,7 @@ class ProductThumb extends React.Component {
     }).then(response => {
       return response.json()
     }).then(json => {
-      window.location.href = "https://tictail.com/checkout?cart_token=" + json.token
+      window.location.href = `https://tictail.com/checkout?cart_token=${json.token}`
     })
   }
 
