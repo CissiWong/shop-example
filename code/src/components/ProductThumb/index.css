@@ -16,6 +16,11 @@
   height: 150px;
 }
 
+.product-image:hover {
+  background: white;
+  opacity: 0.6;
+}
+
 .ProductThumb .product-info {
   height: 100px;
   display: flex;
@@ -48,6 +53,11 @@
 
 .ProductThumb .product-btn {
   width: 90px;
+  cursor: pointer;
+}
+
+.product-btn:hover {
+  border: 1.3px solid #4fbbb6;
 }
 
 @media (min-width: 900px) {
