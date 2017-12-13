@@ -39,16 +39,16 @@ class ProductDetail extends React.Component {
             <div className="product-description">
               {this.state.Product.description}
             </div>
-            {this.state.Product.sale_active &&
-            <div className="onSale">
-              Was: {
-                (this.state.Product.original_price / 100).toLocaleString()
-              } {this.state.Product.currency}
-            </div>
-            }
             <div className="product-amount">
               Price: {
                 (this.state.Product.price / 100).toLocaleString()} {this.state.Product.currency}
+              {this.state.Product.sale_active &&
+              <div className="onSale">
+                {
+                  (this.state.Product.original_price / 100).toLocaleString()
+                } {this.state.Product.currency}
+              </div>
+              }
               <button className="add-to-cart">Add to Cart</button>
             </div>
           </div>
