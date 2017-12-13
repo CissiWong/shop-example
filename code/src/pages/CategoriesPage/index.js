@@ -32,21 +32,25 @@ class CategoriesPage extends React.Component {
 
   render() {
     return (
-      <div className="CategoryCollection">
-        {this.state.categories.length}
-        {this.state.categories.map(item => {
-          return <ProductThumb
-            key={item.id}
-            id={item.id}
-            title={item.title}
-            price={item.price}
-            image={item.images[0].url}
-            description={item.description}
-            currency={item.currency}
-            categories={item.categories[0].slug}
-            onSale={item.sale_active}
-            originalPrice={item.original_price} />
-        })}
+      <div className="CC-container">
+        <div className="count">
+          <h6>Products:{this.state.categories.length}</h6>
+        </div>
+        <div className="CategoryCollection">
+          {this.state.categories.map(item => {
+            return <ProductThumb
+              key={item.id}
+              id={item.id}
+              title={item.title}
+              price={item.price}
+              image={item.images[0].url}
+              description={item.description}
+              currency={item.currency}
+              categories={item.categories[0].slug}
+              onSale={item.sale_active}
+              originalPrice={item.original_price} />
+          })}
+        </div>
       </div>
     )
   }

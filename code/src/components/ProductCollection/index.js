@@ -20,24 +20,26 @@ class ProductCollection extends React.Component {
 
   render() {
     return (
-      <div className="ProductCollection">
+      <div className="PC-container">
         <div className="count">All products:
-          {this.state.Products.length}</div>
-        {this.state.Products.map(item => {
-          return <ProductThumb
-            key={item.id}
-            id={item.id}
-            title={item.title}
-            price={item.price}
-            image={item.images[0].url}
-            description={item.description}
-            currency={item.currency}
-            categories={item.categories[0].slug}
-            onSale={item.sale_active}
-            originalPrice={item.original_price}
-            variationId={item.variations[0].id}/>
-        })}
-
+          {this.state.Products.length}
+        </div>
+        <div className="ProductCollection">
+          {this.state.Products.map(item => {
+            return <ProductThumb
+              key={item.id}
+              id={item.id}
+              title={item.title}
+              price={item.price}
+              image={item.images[0].url}
+              description={item.description}
+              currency={item.currency}
+              categories={item.categories[0].slug}
+              onSale={item.sale_active}
+              originalPrice={item.original_price}
+              variationId={item.variations[0].id}/>
+          })}
+        </div>
       </div>
     )
   }
