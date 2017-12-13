@@ -54,7 +54,7 @@ class ProductDetail extends React.Component {
             {this.state.Product.images.length > 1 &&
               <div className="extraImages">
                 {this.state.Product.images.map(image => {
-                  return <img key={image.id} className="product-detail-image-small" src={image.url} alt="" />
+                  return <img onClick={(image) => (this.setState(image.url))} key={image.id} className="product-detail-image-small" src={image.url} alt="" />
                 })
                 }
               </div>
