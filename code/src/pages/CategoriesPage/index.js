@@ -11,14 +11,23 @@ class CategoriesPage extends React.Component {
   }
 
   componentDidMount() {
-    const catId = this.props.match.params.categoriesid
+    this.fetchProducts(this.props.match.params.categoriesid)
+  }
+
+  fetchProducts(catId) {
     fetch(`https://api.tictail.com/v1.26/stores/5zns/products?categories=${catId}`).then(response => {
-      console.log(response)
       return response.json()
     }).then(json => {
       console.log(json)
       this.setState({ categories: json })
     })
+  }
+
+  componentWillReceiveProps(nextProps) {
+    console.log("mountAgain: ", nextProps)
+    if (this.props.match.params.categoriesid !== nextProps.match.params.categoriesid) {
+      this.fetchProducts(nextProps.match.params.categoriesid)
+    }
   }
 
   render() {
