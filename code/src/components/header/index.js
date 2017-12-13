@@ -18,16 +18,16 @@ class Header extends React.Component {
 
         <div className="menu">
           <ul className="menu-list">
-            <li>Watches</li>
-            <li>Chairs</li>
-            <li>Art</li>
+            <Link to="/categories/a3mi"><li>Watches</li></Link>
+            <Link to="/categories/a3mj"><li>Chairs</li></Link>
+            <Link to="/categories/a3mh"><li>Art</li></Link>
           </ul>
         </div>
 
         <ul className="menu-desktop">
-          <li>Watches</li>
-          <li>Chairs</li>
-          <li>Art</li>
+          <Link to="/categories/a3mi"><li>Watches</li></Link>
+          <Link to="/categories/a3mj"><li>Chairs</li></Link>
+          <Link to="/categories/a3mh"><li>Art</li></Link>
         </ul>
 
       </div>
