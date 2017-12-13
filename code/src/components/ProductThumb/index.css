@@ -57,7 +57,7 @@
 }
 
 .product-btn:hover {
-  border: 1.3px solid #4fbbb6;
+  color: #caccce;
 }
 
 @media (min-width: 900px) {
