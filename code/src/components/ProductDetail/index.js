@@ -51,6 +51,14 @@ class ProductDetail extends React.Component {
               }
               <button className="add-to-cart">Add to Cart</button>
             </div>
+            {this.state.Product.images.length > 1 &&
+              <div>
+                {this.state.Product.images.map(image => {
+                  return <img className="product-detail-image" src={image.url} alt="" />
+                })
+                }
+              </div>
+            }
           </div>
         </div>
       </div>
