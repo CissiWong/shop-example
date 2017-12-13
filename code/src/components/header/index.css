@@ -1,5 +1,4 @@
 .header-container {
-  height: auto;
   margin: 0 10px 0 10px;
   display: flex;
   flex-direction: column;
@@ -15,6 +14,17 @@
   width: 100%;
   text-transform: uppercase;
   font-size: 20px;
+}
+
+.menu-desktop {
+  display: none;
+  width: 20%;
+  flex-direction: row;
+  background: white;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0;
+  margin-top: -3px;
 }
 
 .symbols-container {
@@ -61,7 +71,6 @@ li {
   position: relative;
   left: -600px;
   transition: left 0.3s ease-in-out;
-  box-sizing: border-box;
 }
 
 .hamburger-checkbox {
@@ -83,10 +92,10 @@ li {
   .header-container {
     height: 200px;
   }
-  hr {
-    margin-top: 40px;
-  }
   .hamburger {
+    display: none;
+  }
+  .menu {
     display: none;
   }
   .logo-container {
@@ -94,5 +103,8 @@ li {
   }
   .logo-title {
     font-size: 40px;
+  }
+  .menu-desktop {
+    display: flex;
   }
 }
