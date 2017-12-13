@@ -33,6 +33,12 @@
 
 li {
   list-style-type: none;
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+
+li:hover {
+  color: #4fbbb6;
 }
 
 .hamburger {
@@ -87,7 +93,7 @@ li {
   transform: rotate(45deg) translate(-5px, -5px) ;
 }
 
-/* destop */
+/* desktop */
 @media only screen and (min-width: 950px) {
   .header-container {
     margin: 0 90px 0 90px;

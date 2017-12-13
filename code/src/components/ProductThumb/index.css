@@ -14,6 +14,12 @@
 .ProductThumb .product-image {
   width: 100%;
   height: 150px;
+  background: white;
+  opacity: 0.8;
+}
+
+.product-image:hover {
+  opacity: 1;
 }
 
 .ProductThumb .product-info {
@@ -47,7 +53,12 @@
 }
 
 .ProductThumb .product-btn {
-  width: 120px;
+  width: 90px;
+  cursor: pointer;
+}
+
+.product-btn:hover {
+  color: #caccce;
 }
 
 @media (min-width: 900px) {

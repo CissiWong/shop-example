@@ -56,6 +56,11 @@
   align-self: flex-end;
 }
 
+.add-to-cart:hover {
+  color: #caccce;
+  cursor: pointer;
+}
+
 @media (min-width: 900px) {
   .ProductDetail {
     flex-direction: row;
