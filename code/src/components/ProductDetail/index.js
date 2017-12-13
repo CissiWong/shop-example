@@ -43,7 +43,7 @@ class ProductDetail extends React.Component {
               Price: {
                 (this.state.Product.price / 100).toLocaleString()} {this.state.Product.currency}
               {this.state.Product.sale_active &&
-              <div className="onSale">
+              <div className="onSale-detail">
                 {
                   (this.state.Product.original_price / 100).toLocaleString()
                 } {this.state.Product.currency}

@@ -28,6 +28,13 @@
   display: none;
 }
 
+.onSale-detail {
+  text-align: center;
+  letter-spacing: 1.5px;
+  font-size: 9px;
+  text-decoration: line-through;
+}
+
 .inner-margin {
   margin: 30px;
 }
@@ -68,13 +75,13 @@
     width: 50%;
   }
   .product-amount {
-    width: 80%;
+    width: 85%;
   }
   .add-to-cart {
     width: 30%;
   }
-  .onSale {
-    padding-right: 60px;
+  .onSale-detail {
+    padding-right: 70px;
   }
   .product-detail-image {
     border: none;
