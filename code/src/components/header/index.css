@@ -90,6 +90,7 @@ li {
 @media only screen and (min-width: 600px) {
   .header-container {
     margin: 0 90px 0 90px;
+    flex-direction: column;
   }
   .symbol {
     width: 25px;
@@ -109,6 +110,7 @@ li {
   }
   .logo-title {
     font-size: 40px;
+    padding-top: 25px;
   }
   .menu-desktop {
     display: flex;
