@@ -2,7 +2,6 @@ import React from "react"
 import ProductThumb from "components/ProductThumb"
 import "./index.css"
 
-
 class CategoriesPage extends React.Component {
   constructor(props) {
     super(props)
@@ -21,26 +20,6 @@ class CategoriesPage extends React.Component {
       this.setState({ categories: json })
     })
   }
-  // `https://api.tictail.com/v1.26/stores/5zns/products?categories=${this.props.id}`
-  //
-  // render() {
-  //   return (
-  //     // id={this.state.match.params.categoriesid}
-  //     <div className="category-container">
-  //       {this.state.categories.product_count}
-  //     </div>
-  //   )
-  // }
-
-  // https://api.tictail.com/v1.25/stores/5zns/products?categories=a3mh
-
-  // componentDidMount() {
-  //   fetch("https://api.tictail.com/v1.26/stores/5zns/categories").then(response => {
-  //     return response.json()
-  //   }).then(json => {
-  //     this.setState({ categories: json })
-  //   })
-  // }
 
   render() {
     return (
