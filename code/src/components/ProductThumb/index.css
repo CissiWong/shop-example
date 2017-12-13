@@ -39,6 +39,13 @@
   font-size: 12px;
 }
 
+.onSale {
+  text-align: center;
+  letter-spacing: 1.5px;
+  font-size: 9px;
+  text-decoration: line-through;
+}
+
 .ProductThumb .product-btn {
   width: 120px;
 }
