@@ -15,7 +15,7 @@ class App extends React.Component {
           <Header />
           <div className="page">
             <Route path="/" exact component={Homepage} />
-            <Route path="/categories" component={Categories} />
+            <Route path="/categories/:categoriesid" component={Categories} />
             <Route path="/product/:productid" component={ProductPage} />
           </div>
           <Footer />
