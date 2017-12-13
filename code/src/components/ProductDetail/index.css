@@ -70,9 +70,8 @@
 
 .product-detail-image-small {
   width: 150px;
-  height: 150px;
-  /*max-width: 15%;*/
-  /*max-height: 15%;*/
+  height: 100px;
+  margin-right: 5px;
 }
 
 @media (min-width: 900px) {
