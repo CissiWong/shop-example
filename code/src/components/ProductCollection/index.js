@@ -33,7 +33,8 @@ class ProductCollection extends React.Component {
             currency={item.currency}
             categories={item.categories[0].slug}
             onSale={item.sale_active}
-            originalPrice={item.original_price} />
+            originalPrice={item.original_price}
+            variationId={item.variations[0].id}/>
         })}
 
       </div>
