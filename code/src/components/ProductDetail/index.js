@@ -14,20 +14,15 @@ class ProductDetail extends React.Component {
     fetch(`https://api.tictail.com/v1.25/stores/5zns/products/${this.props.id}`).then(response => {
       return response.json()
     }).then(json => {
-      console.log(json)
       this.setState({ Product: json, displayedImage: json.images[0] })
     })
   }
 
   smallImageClicked(image) {
-    // this.setState(image)
-    console.log(image)
-    this.setState({ displayedImage:image})
-    // this.setState({ Product: image })
+    this.setState({ displayedImage: image })
   }
 
   render() {
-    // const isOnSale = this.state.Product.sale_active
     if (!this.state.Product.id) {
       return null
     }
