@@ -21,10 +21,10 @@ class ProductCollection extends React.Component {
   render() {
     return (
       <div className="PC-container">
-        <div className="count">All products:
+        <div className="count">Number of products:
           {this.state.Products.length}
         </div>
-        <div className="ProductCollection">
+        <div className="Product-list">
           {this.state.Products.map(item => {
             return <ProductThumb
               key={item.id}

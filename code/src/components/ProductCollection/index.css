@@ -1,6 +1,6 @@
 /* CSS for ProductCollection component */
 
-.ProductCollection {
+.Product-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -9,7 +9,10 @@
   width: 100%;
 }
 
-.ProductCollection.count {
-  font-size: 15px;
-
+.PC-container .count {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: -15px;
+  letter-spacing: 1px;
 }
