@@ -75,9 +75,22 @@ li {
   opacity: 1;
 }
 
+.hamburger-checkbox:checked + .hamburger .bar1 {
+  transform: rotate(-45deg) translate(-6px, 5px);
+}
+
+.hamburger-checkbox:checked + .hamburger .bar2 {
+  opacity: 0;
+}
+
+.hamburger-checkbox:checked + .hamburger .bar3 {
+  transform: rotate(45deg) translate(-5px, -5px) ;
+}
+
 @media only screen and (min-width: 600px) {
   .header-container {
     margin: 0 90px 0 90px;
+    flex-direction: column;
   }
   .symbol {
     width: 25px;
@@ -97,6 +110,7 @@ li {
   }
   .logo-title {
     font-size: 40px;
+    padding-top: 25px;
   }
   .menu-desktop {
     display: flex;
