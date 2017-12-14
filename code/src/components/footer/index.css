@@ -40,8 +40,7 @@ a.helpCenter
 
 @media only screen and (min-width: 600px) {
   .footer {
-    margin-left: 50px;
-    margin-right: 50px;
-    height: 200px;
+    margin: 100px 50px 0 50px;
+    height: 150px;
   }
 }

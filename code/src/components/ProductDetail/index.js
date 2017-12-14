@@ -31,6 +31,14 @@ class ProductDetail extends React.Component {
       <div className="ProductDetail">
         <div className="product-detail-container">
           <img className="product-detail-image" src={this.state.displayedImage.url} alt="" />
+          {this.state.Product.images.length > 1 &&
+            <div className="extraImages">
+              {this.state.Product.images.map(image => {
+                return <img onClick={() => this.smallImageClicked(image)} key={image.id} className="product-detail-image-small" src={image.url} alt="" />
+              })
+              }
+            </div>
+          }
         </div>
         <div className="product-information">
           <div className="inner-margin">
@@ -55,14 +63,6 @@ class ProductDetail extends React.Component {
               }
               <button className="add-to-cart">Add to Cart</button>
             </div>
-            {this.state.Product.images.length > 1 &&
-              <div className="extraImages">
-                {this.state.Product.images.map(image => {
-                  return <img onClick={() => this.smallImageClicked(image)} key={image.id} className="product-detail-image-small" src={image.url} alt="" />
-                })
-                }
-              </div>
-            }
           </div>
         </div>
       </div>
