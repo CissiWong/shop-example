@@ -15,26 +15,23 @@
 
 .menu-list {
   margin: 0;
-  padding-left: 12px;
-  padding-bottom: 22px;
-  padding-top: 22px;
+  padding: 22px 0 22px 18px;
 }
 
 .menu-desktop {
   display: none;
   width: 20%;
   flex-direction: row;
-  background: white;
   justify-content: space-between;
   margin: auto;
   padding: 0;
-  margin-top: -3px;
+  margin-top: -2px;
 }
 
 li {
   list-style-type: none;
   letter-spacing: 2px;
-  line-height: 25px;
+  line-height: 30px;
 }
 
 li:hover {
@@ -47,9 +44,7 @@ li:hover {
   margin: 0;
   cursor: pointer;
   margin-right: 60px;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-bottom: 10px;
+  padding: 15px 0 10px 15px;
   display: block;
   position: relative;
   z-index: 1;
