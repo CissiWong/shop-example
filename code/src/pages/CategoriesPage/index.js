@@ -2,6 +2,9 @@ import React from "react"
 import ProductThumb from "components/ProductThumb"
 import "./index.css"
 
+// redux, flux, tictail-tide
+// 
+
 class CategoriesPage extends React.Component {
   constructor(props) {
     super(props)
