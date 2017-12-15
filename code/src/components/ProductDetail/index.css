@@ -81,6 +81,7 @@
   .ProductDetail {
     width: 90%;
     align-items: center;
+    margin: auto;
   }
   .add-to-cart {
     margin-top: 20px;
@@ -97,11 +98,13 @@
   .ProductDetail {
     flex-direction: row;
     width: 90%;
+    margin: auto;
     margin-top: 20px;
     border-top: 1px solid grey;
   }
   .product-detail-container {
     width: 50%;
+    height: 500px;
     margin: 0;
   }
   .inner-margin {
@@ -109,12 +112,14 @@
   }
   .product-information {
     width: 50%;
+    height: 500px;
+  }
+  .product-image {
+    height: 500px;
+    width: auto;
   }
   .product-amount {
-    width: 100%;
-  }
-  .onSale-detail {
-    padding-right: 70px;
+    width: auto;
   }
   .product-detail-image {
     border: none;
