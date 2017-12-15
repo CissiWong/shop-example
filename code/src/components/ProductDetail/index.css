@@ -58,7 +58,7 @@
 }
 
 .add-to-cart {
-  width: 40%;
+  width: auto;
   align-self: flex-end;
 }
 
@@ -72,6 +72,22 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+  .ProductDetail {
+    width: 90%;
+    align-items: center;
+  }
+  .add-to-cart {
+    margin-top: 20px;
+    align-self: flex-start;
+  }
+  .product-amount {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 @media (min-width: 900px) {
@@ -93,9 +109,6 @@
   }
   .product-amount {
     width: 100%;
-  }
-  .add-to-cart {
-    width: 30%;
   }
   .onSale-detail {
     padding-right: 70px;
