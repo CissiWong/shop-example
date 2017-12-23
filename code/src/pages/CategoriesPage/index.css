@@ -1,8 +1,0 @@
-.CategoryCollection {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-height: auto;
-  justify-content: center;
-  width: 100%;
-}
