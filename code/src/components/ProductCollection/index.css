@@ -1,0 +1,18 @@
+/* CSS for ProductCollection component */
+
+.Product-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-height: auto;
+  justify-content: center;
+  width: 100%;
+}
+
+.count {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: -15px;
+  letter-spacing: 1px;
+}

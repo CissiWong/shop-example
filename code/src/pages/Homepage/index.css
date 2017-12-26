@@ -1,0 +1,35 @@
+.body-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-image-container {
+  width: 100%;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.hero-products {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 18px;
+  border-bottom: 1px solid grey;
+  padding-top: 35px;
+  margin-bottom: 35px;
+}
+
+@media (min-width: 900px) {
+  .hero-products {
+    font-size: 30px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+  .hero-image-container {
+    width: 85%;
+  }
+}
